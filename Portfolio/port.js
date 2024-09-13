@@ -1,0 +1,12 @@
+$(function(){
+    $("input[type='checkbox']").on("click",function(){
+       $("h4").toggleClass("change")
+   })
+  $(".more:first").addClass("close");
+  $(".more:last").on("mouseover",function(){
+        $(".more:last").addClass("high")
+   });
+   $(".more:last").on("mouseleave",function(){
+        $(".more:last").removeClass("high")
+   });
+})

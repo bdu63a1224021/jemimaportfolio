@@ -1,0 +1,583 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html{
+    scroll-behavior:smooth;
+}
+
+body {
+    background-color:#111;
+
+
+    margin: 0;
+    padding:0;
+    background-attachment: scroll;
+}
+
+h2 span{
+    color:#ff0a6c;
+    font-size:29px;
+    -webkit-text-stroke:0vw #fff;
+    letter-spacing:1px;
+    font-weight:900;
+}
+
+h1 span{
+    color:#ff0a6c;
+     -webkit-text-stroke:0vw #fff;
+     letter-spacing:1px;
+     font-weight:900;
+}
+
+h3 span{
+    color:#ff0a6c;
+    font-size:29px;
+    letter-spacing:1px;
+    -webkit-text-stroke:0vw #fff;
+    font-weight:900;
+}
+
+
+.header{
+    position:fixed;
+    top:-5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:60px;
+    background:rgba(255,255,255,0.08);
+    z-index:1000;
+}
+
+.header ul{
+    position:relative;
+    display:flex;
+    top:5px;
+    left:-10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.header ul li{
+    list-style:none;
+}
+
+.header ul li a{
+    display:block;
+    text-decoration:none;
+    color:transparent;
+    font-weight:700;
+    text-transform:uppercase;
+    margin-right:15px;
+    font-size:0.9em;
+    padding:4px;
+    z-index:100;
+    transition:0.7s;
+    -webkit-text-stroke:0.1vw #fff;
+    z-index:1000;
+    letter-spacing:1px;
+}
+
+.header ul:hover li a
+{
+    transform:scale(1.2);
+    opacity:0.3;
+}
+
+.header ul li a:hover
+{
+    transform:scale(1.3);
+    opacity:1;
+    filter:blur(0px);
+    color:#ff0a6c;
+    -webkit-text-stroke:0vw #fff;
+    font-weight:900;
+}
+
+.first{
+    position:relative;
+    top:-20px;
+    width:100%;
+    height:102vh;
+    background:url('https://www.dropbox.com/s/ohsmbpl552uj2ug/ef62bea6f5a9837fb5a9c6e8f1a730f5.jpg?dl=1');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow-x:hidden;
+}
+
+.first h1{
+    position:relative;
+    top:120px;
+    font-size:35px;
+    letter-spacing:2px;
+    text-align:center;
+    color:transparent;
+    -webkit-text-stroke:0.2vw #fff;
+}
+
+.first h3{
+    position:relative;
+    top:100px;
+    text-align:center;
+    font-variant:small-caps;
+    font-size:25px;
+    -webkit-text-stroke:0.2vw #fff;
+    letter-spacing:1px;
+    color:transparent;
+}
+
+.first p{
+    position:relative;
+    text-align:center;
+    top:90px;
+    font-weight:300;
+    font-size:15px;
+    padding:5px;
+    color:#fff;
+    display:flex;
+}
+
+.more{
+    position:relative;
+    top:100px;
+    left:11%;
+    padding:8px;
+    margin-left:10px;
+    display:inline-block;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:650;
+    text-transform:uppercase;
+    border-radius:7px 0px 7px 0px;
+    border:2px solid #ff0a6c;
+    transition:0.5s;
+    color:transparent;
+    -webkit-text-stroke:0.2vw #fff;
+    letter-spacing:3px;
+}
+
+.close{
+    background:#ff0a6c;
+    -webkit-text-stroke:0vw #fff;
+    color:#fff;
+    padding:8px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.high{
+    background:#ff0a6c;
+}
+
+.second{
+    position:relative;
+    background:url('https://www.dropbox.com/s/1rxly3ayq65xqbt/360a97be8e0afa21cc6d60e4d5de50f9.jpg?dl=1');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow-x:hidden;
+    top:-30px;
+    width:100%;
+    height:102vh;
+}
+
+.second .content{
+    position:relative;
+    top:50px;
+    text-align:center;
+}
+
+.second .content h2{
+    position:relative;
+    color:transparent;
+    top:10px;
+    font-weight:800;
+    text-transform:uppercase;
+    -webkit-text-stroke:0.2vw #fff;
+}
+
+.second .content p{
+    color:#fff;
+    position:relative;
+    font-weight:700;
+    font-family:'Poppins', sans-serif;
+}
+
+.rate{
+    position:relative;
+    top:40px;
+    left:13%;
+}
+
+.rate h2{
+    position:relative;
+    color:#fff;
+    font-size:17px;
+    position:relative;
+    font-weight:900;
+    top:35px;
+    font-family:'Poppins', sans-serif;
+}
+
+.rate .hierachy{
+    position:relative;
+    top:-10px;
+    width:250px;
+    height:7px;
+    background:#fff;
+    border-radius:5px;
+}
+
+.rate .start::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:calc(250px - 10%);
+    background:#ff0a6c;
+    height:7px;
+    border-radius:5px;
+    color:#fff;
+    transform:scale(1);
+}
+
+.rate .color::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:calc(250px - 15%);
+    background:#ff0a6c;
+    height:7px;
+    border-radius:5px;
+    transform:scale(1);
+}
+
+.rate .brain::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:calc(250px - 30%);
+    background:#ff0a6c;
+    height:7px;
+    border-radius:5px;
+    transform:scale(1);
+}
+
+.rate .start:hover::before{
+    transform:scale(1.3);
+}
+
+.rate .color:hover::before{
+    transform:scale(1.3);
+}
+
+.rate .color:hover::before{
+    transform:scale(1.3);
+}
+
+
+.rate h3{
+    color:#fff;
+    position:relative;
+    left:200px;
+}
+
+.rate h3:nth-child(1){
+    top:50px;
+}
+
+.third{
+    position:relative;
+    top:-30px;
+    width:100%;
+    height:100vh;
+    background:#1c1c25;
+}
+
+.third .box{
+    position:relative;
+    align-items:center;
+    top:50px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.third .box1{
+    position:relative;
+    width:300px;
+    height:235px;
+    border-radius:0px 25px 0px 25px;
+    text-align:center;
+    border:3px solid #ff0a6c;
+    margin:10px 0px;
+}
+
+.third .box1 h2{
+    -webkit-text-stroke:0.1vw #fff;
+    color:transparent;
+    font-weight:900;
+    letter-spacing:0.5px;
+}
+
+.third .box1 p{
+    font-weight:550;
+    font-size:15px;
+    font-family:'Poppins', sans-serif;
+    color:#fff;
+}
+
+.third .box:nth-child(3) p{
+    position:relative;
+    top:-20px;
+}
+
+.fourth{
+    position:relative;
+    top:-50px;
+    width:100%;
+    height:120vh;
+    background:#000;
+}
+
+.fourth h3{
+    position:relative;
+    top:55px;
+    text-align:center;
+    font-size:22px;
+    -webkit-text-stroke:0.2vw #fff;
+    text-transform:uppercase;
+    color:transparent;
+}
+
+.fourth .imgbx{
+    position:relative;
+    top:60px;
+    left:12%;
+    width:275px;
+    height:170px;
+    margin:15px 0px;
+    box-shadow:0px 0px 35px rgba(0,0,0,0.5);
+    border:1px solid #f60a6c;
+    border-radius:10px 0px 10px 0px;
+}
+
+.fourth .imgbx img{
+    position:relative;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.7s;
+    display:flex;
+    border-radius:10px 0px 10px 0px;
+}
+
+.fourth .imgbx img:hover{
+    transform:scale(1.1);
+}
+
+.fifth{
+    position:relative;
+    top:-65px;
+    height:100vh;
+    width:100%;
+    background:#1c1c25;
+}
+
+.fifth .cool{
+  position:relative;
+  margin-left:70px;
+}
+
+.cool h1{
+    position:relative;
+    top:30px;
+    left:-40px;
+    font-weight:900;
+    text-align:center;
+    font-size:28px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    text-shadow:0px 0px 10px rgba(0,0,0,0.5);
+    font-family:'Poppins', sans-serif;
+    color:#fff;
+}
+
+.cool span{
+    color:#ff0a6c;
+}
+
+input::placeholder{
+     color:#777;
+     position:relative;
+     font-family:'Poppins', sans-serif;
+     text-transform:uppercase;
+}
+
+.cool input{
+    position:relative;
+    font-family:'Poppins', sans-serif;
+    letter-spacing:1px;
+    color:#fff;
+}
+
+.cool input[type="text"]{
+    padding:15px;
+    border-top:none;
+    border-left:none;
+    border-bottom:2px solid #ff0a6c;
+    border-right:none;
+    background:transparent;
+    outline:none;
+    margin-top:25px;
+    width:200px;
+}
+
+.cool input[type="email"]{
+    padding:15px;
+    border-top:none;
+    border-left:none;
+    border-bottom:2px solid #ff0a6c;
+    border-right:none;
+    background:transparent;
+    outline:none;
+    margin-top:25px;
+    width:200px;
+}
+
+.cool input[type="password"]{
+    padding:15px;
+    border-top:none;
+    border-left:none;
+    border-bottom:2px solid #ff0a6c;
+    border-right:none;
+    background:transparent;
+    outline:none;
+    margin-top:25px;
+    width:200px;
+}
+
+.cool h4{
+    position:relative;
+    top:-5px;
+    margin-left:30px;
+    text-decoration:none;
+    font-weight:650;
+    color:#fff;
+    letter-spacing:1px;
+    font-size:15px;
+    text-transform:uppercase;
+    outline:none;
+    font-family:'Poppins', sans-serif;
+} 
+
+label{
+    position:relative;
+}
+
+.link input[type="checkbox"]{
+    
+    position:relative;
+}
+
+.link i{
+    position:absolute;
+    top:35px;
+    left:0px;
+    width:15px;
+    height:15px;
+    border:2px solid #ff0a6c;
+    margin-left:3px;
+    border-radius:5px 0px 5px 0px;
+    transition:0.5s;
+}
+
+input[type="checkbox"]:checked~ i{
+    content:'';
+    position:absolute;
+    top:35px;
+    left:0;
+    border-top:0;
+    border-right:0;
+    width:15px;
+    height:7px;
+    border-left:2px solid #fff;
+    border-bottom:2px solid #fff;
+    transform:rotate(300deg);
+    border-radius:0px;
+}
+
+.cool input[type="Submit"]{
+    position:relative;
+    left:47px;
+    width:128px;
+    color:#fff;
+    height:40px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:700;
+    outline:none;
+    transition:0.5s;
+    border:none;
+    border-radius:5px 0px 5px 0px; 
+    background:rgba(255,255,255,0.05);
+    box-shadow:0px 15px 35px rgba(0,0,0,0.5);
+}
+
+.cool input:hover[type="Submit"]{
+    background:#ff0a6c;
+}
+
+.media .fa{
+    position:relative;
+    left:15%;
+    width:40px;
+    height:40px;
+    display:inline-flex;
+    border-radius:50%;
+    justify-content:center;
+    align-items:center;
+    color:#ff0a6c;
+    margin-right:25px;
+    font-size:23px;
+    transition:0.5s;
+}
+
+.media .fa:hover{
+    background:#ff0a6c;
+    color:#fff;
+    font-weight:300;
+    transform:scale(1.13);
+}
+
+.change{
+    color:#fff;
+}
+
+.cool .fa{
+    position:relative;
+    left:-240px;
+    color:#ff0a6c;
+}
+
+.come{
+    position:relative;
+    text-align:center;
+}
+
+.come h3{
+    color:#fff;
+    position:relative;
+    top:25px;
+    text-transform:uppercase;
+}
+
+.come p{
+    color:#fff;
+    font-size:13px;
+    padding:10px;
+}
